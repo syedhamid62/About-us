@@ -1,0 +1,511 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.about-section {
+    position: relative;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.text-content {
+    width: 50%;
+    padding: 20px;
+}
+
+.text-content h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    font-size: 16px;
+    color: #333;
+}
+
+
+.stats {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: #f4a025;
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-weight: bold;
+    height: 100px;
+    align-items: center;
+    z-index: 1; 
+    margin-top: 40px;
+    margin-left: 700px;
+    padding-right: 600px;
+    padding-bottom: 250px;
+    border-radius: 8px;
+    
+}
+
+
+.stats div {
+    padding-left: 60px;
+    padding-top: 55px;
+    font-size: 30px;
+}
+.stats-name{
+    color: black;
+}
+
+.stats span {
+    font-size: 14px;
+}
+
+.image-wrapper {
+    width: 100%;
+    position: relative;
+    z-index: 2; /* Higher z-index to keep it above stats */
+}
+
+
+.image-wrapper img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.quote {
+    text-align: center;
+    font-style: italic;
+    margin: 20px 0;
+}
+
+.section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.section-content img {
+    width: 40%;
+    border-radius: 10px;
+}
+
+.section-content .text-content {
+    width: 55%;
+}
+/* Contributors Section */
+.contributors-section {
+    text-align: left;
+    padding: 50px 10%;
+}
+
+.contributors-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-left: 5px solid black;
+    padding-left: 10px;
+}
+
+.contributors-description {
+    font-size: 16px;
+    color: #555;
+    max-width: 700px;
+    margin-bottom: 30px;
+}
+
+.contributors-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.contributor-card {
+    width: 30%;
+    background: #f9f9f9;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+}
+
+.contributor-image img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.contributor-info {
+    padding: 15px;
+}
+
+.contributor-info h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+
+.role {
+    font-size: 14px;
+    font-weight: bold;
+    color: #f4a025;
+}
+
+/* ...................... */
+/* Importing Google fonts - Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+
+.cont1 {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Inter", sans-serif;
+}
+
+.cont1 {
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 10vh;
+background: linear-gradient(#ebecef, #f1f1f6);
+}
+
+.card-wrapper{
+    max-width: 1100px;
+    margin: 0 60px 25;
+    padding: 20px 10px;
+
+    overflow: hidden;
+}
+
+.card-list .card-item {
+    list-style: none;
+}
+
+.card-list .card-item .card-link {
+    user-select: none;
+    display: block;
+    background: #fff;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.4s ease;
+
+    }
+    
+.card-list .card-item .card-link:active{
+    cursor: grabbing;
+    }
+.card-list .card-item .card-link:hover {
+    border-color: #5372F0;
+    }
+
+.card-list .card-link .card-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card-list .card-link .badge {
+    color: #5372F0;
+    
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    
+    font-weight: 500;
+    margin: 16px 0 18px;
+    
+    background: #DDE4FF;
+    width: fit-content;
+    
+    border-radius: 50px;
+    }
+    
+.card-list .card-link .card-title {
+    font-size: 1.19rem;
+    
+    color: #21183f;  
+    font-weight: 600;
+    
+}
+
+.card-list .card-link .card-button {
+        height: 35px;
+        width: 35px;
+        color: #5372F0;
+        border-radius: 50%;
+        margin: 30px 0 5px;
+        background: none;
+        cursor: pointer;
+        border: 2px solid #5372F0;
+        transform: rotate(-45deg);
+        transition: 0.4s ease;
+}
+.card-list .card-link:hover .card-button{
+    color: #fff;
+    background:#576189 ;
+}
+
+.card-list .card-link .badge.b1 {
+    color: #d41598;
+    background: #d5d0d5;
+    }
+    
+.card-list .card-link .badge.b2 {
+    color: #825A2B;
+    background: #FFE3D2;
+    }
+    
+.card-list .card-link .badge.b3 { /* Corrected typo "badger" to "badge" */
+    color: #205C20;
+    background: #D6F8D6;
+    }
+    
+.card-list .card-link .badge.b4 {
+    color: #856404;
+    background: #FFF3CD; /* Corrected background color value */
+    }
+.card-list .card-link .badge.b5 {
+    color: #23654b;
+    background: #b9c1b6; /* Corrected background color value */
+    }
+
+
+ .card-wrapper .swiper-pagination-bullet{
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
+    background: #5372f0;
+ }
+ .card-wrapper .swiper-pagination-bullet-active{
+    opacity: 1;
+ }
+
+ .card-wrapper .swiper-slide-button{
+    color: #5372f0;
+    margin-top: -35px;
+ }
+
+ @media screen and (max-width: 768px) {
+    .card-wrapper {
+      margin: 0 10px 25px;
+    }
+  
+    .card-wrapper .swiper-slide-button {
+      display: none;
+    }
+  }
+
+  /* .................... */
+
+  #faq {
+    padding: 40px;
+    background: #f9f9f9;
+    text-align: center;
+  }
+  
+  #faq h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .faq-categories {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .faq-btn {
+    padding: 10px 15px;
+    border: 1px solid #000;
+    background: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  .faq-btn.active, .faq-btn:hover {
+    background: #000;
+    color: white;
+  }
+  
+  .faq-items {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .faq-item {
+    background: white;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .faq-question {
+    padding: 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+  
+  .faq-icon {
+    font-size: 1.5rem;
+  }
+  
+  .faq-answer {
+    padding: 15px;
+    font-size: 1rem;
+    display: none;
+    text-align: left;
+  }
+  
+  .faq-item.active .faq-answer {
+    display: block;
+  }
+  
+  .faq-item.active .faq-icon {
+    transform: rotate(45deg);
+  }
+  
+
+  @media (max-width: 1024px) and (min-width: 900px) {
+    .stats {
+        position: relative;  
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .mission-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mission-section .stats {
+        order: 2; /* Move stats below <h2>Our Mission</h2> and <p> */
+    }
+
+    .mission-section img {
+        order: 3; /* Keep image below stats */
+    }
+}
+
+@media (max-width: 900px) {
+    .stats {
+        position: relative;
+        width: 30%;
+        margin: 20px 0;
+        flex-direction: column;
+        padding: 20px;
+        padding-bottom: 200px;
+        text-align: center;
+    }
+
+    .stats div {
+        padding-left: 0;  /* Remove left padding for better alignment */
+        padding-top: 10px;
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+
+    .stats span {
+        font-size: 12px; /* Adjust text size */
+    }
+
+    .mission-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mission-section .stats {
+        order: 2; /* Keep it below "Our Mission" and above the image */
+    }
+
+    .mission-section img {
+        order: 3;
+        width: 100%; /* Ensure image resizes properly */
+    }
+}
+
+/* Responsive for Very Small Screens (Below 480px) */
+@media (max-width: 480px) {
+    .stats {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center;
+        padding: 15px;
+        font-size: 18px; /* Reduce text size for better fit */
+    }
+
+    .stats div {
+        font-size: 20px; /* Reduce number size */
+        padding-top: 5px;
+    }
+
+    .stats span {
+        font-size: 10px; /* Reduce label size */
+    }
+
+    .mission-section img {
+        width: 100%; /* Ensure image fits smaller screens */
+    }
+}
+
+/* ...... */
+@media (max-width: 740px) {
+    .section-content1 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .section-content1 img {
+        width: 80%;  /* Adjust width for balance */
+        /* margin-bottom: 20px; Add space below the image */
+    }
+
+    .section-content1 .text-content {
+        width: 100%; /* Full width */
+        text-align: left; /* Align text to the left */
+        padding: 0 20px; /* Add padding for better readability */
+    }
+}
+@media (max-width: 740px) {
+    .section-content2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .section-content2 img {
+        width: 80%;  /* Adjust width for balance */
+        margin-top: 20px; /* Add space below the image */
+    }
+
+    .section-content2 .text-content {
+        width: 100%; /* Full width */
+        text-align: left; /* Align text to the left */
+        padding: 0 20px; /* Add padding for better readability */
+    }
+}
